@@ -6,6 +6,7 @@
     <title>Luxtaxi.az</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
         body {
             background-color: black;
             color: white;
@@ -20,23 +21,57 @@
             padding: 20px;
             box-sizing: border-box;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 90%;
+            width: 800px;
+            padding: 20px;
         }
+
         h1 {
-            font-size: 24px;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
+
         p {
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 1.5;
         }
+
         img.logo {
-            width: 80px;  /* Adjust width */
-            height: 80px; /* Adjust height */
-            object-fit: contain;  /* Ensures logo doesn't stretch */
+            width: auto;
+            max-width: 100px;
+            max-height: 100px;
+            height: auto;
             margin-bottom: 20px;
         }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem; /* Smaller header on mobile */
+            }
+            p {
+                font-size: 0.9rem; /* Smaller text on mobile */
+            }
+            .container {
+                max-width: 100%;
+                padding: 15px;
+            }
+            img.logo {
+                max-width: 80px;
+                max-height: 80px; /* Adjust the logo size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.25rem; /* Even smaller header on very small screens */
+            }
+            p {
+                font-size: 0.8rem; /* Even smaller text on very small screens */
+            }
+        }
+
     </style>
     <script>
         setTimeout(function() {
